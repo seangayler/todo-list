@@ -1,0 +1,44 @@
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+}
+
+.Toolbar {
+  background-color: grey;
+  height: 30px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+
+.Toolbar__create {
+  background-color: green;
+  font-size: 1em;
+  border: 2px solid black;
+}
+
+.ListItem {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+  max-width: 100vw;
+  border: 2px solid black;
+  margin: 7px 0 7px 0;
+}
+
+.ListItem__text {
+  margin: 0;
+}
+
+.ListItem__delete {
+  font-size: 2em;
+  min-height: 45px;
+  min-width: 45px;
+  padding: 2px;
+  background-color: maroon;
+  border: 2px solid black;
+}

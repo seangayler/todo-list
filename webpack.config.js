@@ -8,17 +8,20 @@ module.exports = {
   module: {
     rules: [
       { test: /\.css$/,
-        loader: 'style-loader!css-loader',
-        options: {
-          presets: ['css-loader', 'style-loader']
-        }
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader'}
+        ]
       },
       { test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env', '@babel/preset-react']
-        }
+        use: [
+          { loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react']
+            }
+          }
+        ]
       },
     ]
   }
